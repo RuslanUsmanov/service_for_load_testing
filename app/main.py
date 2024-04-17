@@ -12,17 +12,17 @@ app = FastAPI(
 
 
 @app.get("/", include_in_schema=False)
-def index():
+async def index():
     return RedirectResponse("/api/docs")
 
 
 @app.get("/api/", include_in_schema=False)
-def bare_api_route():
+async def bare_api_route():
     return RedirectResponse("/api/docs")
 
 
 @app.get("/docs/", include_in_schema=False)
-def wrong_docs():
+async def wrong_docs():
     return RedirectResponse("/api/docs")
 
 
