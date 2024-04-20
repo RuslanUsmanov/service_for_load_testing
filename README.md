@@ -45,15 +45,15 @@
 
 4. Устанавливаем зависимости:
     ```bash
-    $ pip install --upgrade -r requirements.txt
+    (.venv)$ pip install --upgrade -r requirements.txt
     ```
 
 5. Запускаем сервер:
     ```bash
-    $ uvicorn --workers 1 --host localhost --port 8000 app.main:app
+    (.venv)$ uvicorn --workers 1 --host localhost --port 8000 app.main:app
     ```
 
-6. Открываем в браузере адрес [http://localhost:8000](http://localhost:8000) и убеждаемся в работаспособности сервера.
+6. Открываем в браузере адрес [http://localhost:8000](http://localhost:8000) и убеждаемся в работоспособности сервера.
 
 7. Для остановки сервера нажмите комбинацию клавиш CTRL+C.
 
